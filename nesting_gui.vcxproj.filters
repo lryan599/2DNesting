@@ -1,0 +1,536 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Source Files\engine">
+      <UniqueIdentifier>{c4a0ad5e-2347-4da1-819e-3b86261bd16e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine">
+      <UniqueIdentifier>{742b2cb4-32eb-45d5-82ae-c5f8470d8374}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\entity">
+      <UniqueIdentifier>{4e1cb713-8662-401f-9f01-026777fd79f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\geometry">
+      <UniqueIdentifier>{35949bca-c541-4184-a964-146f693e7541}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\engine\utils">
+      <UniqueIdentifier>{1b68201d-f163-487c-a37b-c26f45eb7766}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\gui">
+      <UniqueIdentifier>{4755c76e-4f36-4a14-a53a-12da9c96e1f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui">
+      <UniqueIdentifier>{099cdaea-7da2-48c4-bcc5-44da8391c40a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\data">
+      <UniqueIdentifier>{7e3a8559-810b-4e1d-9b34-3d153c649f1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\data">
+      <UniqueIdentifier>{00744bfe-73b2-4d10-b6bb-e3cfd38fff25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{e74269d0-a239-4d3e-bf0f-0235f207809b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\csv">
+      <UniqueIdentifier>{2d26f465-379d-485e-9119-3621d2b95ccb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\dxf">
+      <UniqueIdentifier>{7e1ff7c2-6002-4e4d-b085-4d19b892b186}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\dxf\albano">
+      <UniqueIdentifier>{616d2bec-249e-48b7-9143-a0e9b9ace9f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\dxf\jakobs2">
+      <UniqueIdentifier>{d98d254e-4f26-4644-b2db-41138e8e5597}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\svg">
+      <UniqueIdentifier>{07457baf-77d0-46e9-9e51-5329c0ea63cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\dxf\dighe2">
+      <UniqueIdentifier>{8c409b6d-7f4a-4178-be4f-26101a683139}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\dxf\dighe1">
+      <UniqueIdentifier>{031cf55a-a60d-425a-9b04-d5a52bbde3ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\svg\dighe1">
+      <UniqueIdentifier>{a5cccb73-1fea-4d4e-ac37-b1d94fd3c07b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\svg\dighe2">
+      <UniqueIdentifier>{4f37beb2-cdb3-45ff-8985-55dc33ea218b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="nesting_gui.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtUic Include="nesting_gui.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="algorithm.cpp">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="candidate_points.cpp">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="layout.cpp">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="nesting.cpp">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="postprocess.cpp">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="preprocess.cpp">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="transformed_shape.cpp">
+      <Filter>Source Files\engine</Filter>
+    </ClCompile>
+    <ClCompile Include="table_manager.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="nesting_gui.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="layout_widget.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="data_converter.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="dx_iface.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="svg_helper.cpp">
+      <Filter>Source Files\data</Filter>
+    </ClCompile>
+    <ClCompile Include="interface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="candidate_points.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="nesting.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="postprocess.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="preprocess.h">
+      <Filter>Header Files\engine</Filter>
+    </ClInclude>
+    <ClInclude Include="layout.h">
+      <Filter>Header Files\engine\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="part.h">
+      <Filter>Header Files\engine\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="sheet.h">
+      <Filter>Header Files\engine\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="transformed_shape.h">
+      <Filter>Header Files\engine\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="basic.h">
+      <Filter>Header Files\engine\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="algorithm.h">
+      <Filter>Header Files\engine\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="simplification.h">
+      <Filter>Header Files\engine\geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="lru_size.h">
+      <Filter>Header Files\engine\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="hasher.h">
+      <Filter>Header Files\engine\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="rand.h">
+      <Filter>Header Files\engine\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="wyhash.h">
+      <Filter>Header Files\engine\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="table_polygon_item.h">
+      <Filter>Header Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="solution.h">
+      <Filter>Header Files\engine\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dx_iface.h">
+      <Filter>Header Files\data</Filter>
+    </ClInclude>
+    <ClInclude Include="dx_data.h">
+      <Filter>Header Files\data</Filter>
+    </ClInclude>
+    <ClInclude Include="data_converter.h">
+      <Filter>Header Files\data</Filter>
+    </ClInclude>
+    <ClInclude Include="svg_helper.h">
+      <Filter>Header Files\data</Filter>
+    </ClInclude>
+    <ClInclude Include="interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="nesting_gui.h">
+      <Filter>Header Files\gui</Filter>
+    </QtMoc>
+    <QtMoc Include="table_manager.h">
+      <Filter>Header Files\gui</Filter>
+    </QtMoc>
+    <QtMoc Include="worker.h">
+      <Filter>Header Files\gui</Filter>
+    </QtMoc>
+    <QtMoc Include="layout_widget.h">
+      <Filter>Header Files\gui</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="create_sheet.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="wait.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include="data\csv\albano.csv">
+      <Filter>Data\csv</Filter>
+    </None>
+    <None Include="data\csv\dagli.csv">
+      <Filter>Data\csv</Filter>
+    </None>
+    <None Include="data\csv\dighe1.csv">
+      <Filter>Data\csv</Filter>
+    </None>
+    <None Include="data\csv\dighe2.csv">
+      <Filter>Data\csv</Filter>
+    </None>
+    <None Include="data\csv\fu.csv">
+      <Filter>Data\csv</Filter>
+    </None>
+    <None Include="data\csv\jakobs1.csv">
+      <Filter>Data\csv</Filter>
+    </None>
+    <None Include="data\csv\jakobs2.csv">
+      <Filter>Data\csv</Filter>
+    </None>
+    <None Include="data\csv\jakobs2_clustered.csv">
+      <Filter>Data\csv</Filter>
+    </None>
+    <None Include="data\csv\mao.csv">
+      <Filter>Data\csv</Filter>
+    </None>
+    <None Include="data\csv\marques.csv">
+      <Filter>Data\csv</Filter>
+    </None>
+    <None Include="data\csv\shapes0.csv">
+      <Filter>Data\csv</Filter>
+    </None>
+    <None Include="data\csv\shapes1.csv">
+      <Filter>Data\csv</Filter>
+    </None>
+    <None Include="data\csv\shirts.csv">
+      <Filter>Data\csv</Filter>
+    </None>
+    <None Include="data\csv\swim.csv">
+      <Filter>Data\csv</Filter>
+    </None>
+    <None Include="data\csv\swim_clustered.csv">
+      <Filter>Data\csv</Filter>
+    </None>
+    <None Include="data\csv\trousers.csv">
+      <Filter>Data\csv</Filter>
+    </None>
+    <None Include="data\dxf\albano\drawing 1(2).dxf">
+      <Filter>Data\dxf\albano</Filter>
+    </None>
+    <None Include="data\dxf\albano\drawing 2(2).dxf">
+      <Filter>Data\dxf\albano</Filter>
+    </None>
+    <None Include="data\dxf\albano\drawing 3(4).dxf">
+      <Filter>Data\dxf\albano</Filter>
+    </None>
+    <None Include="data\dxf\albano\drawing 4(4).dxf">
+      <Filter>Data\dxf\albano</Filter>
+    </None>
+    <None Include="data\dxf\albano\drawing 5(4).dxf">
+      <Filter>Data\dxf\albano</Filter>
+    </None>
+    <None Include="data\dxf\albano\drawing 6(4).dxf">
+      <Filter>Data\dxf\albano</Filter>
+    </None>
+    <None Include="data\dxf\albano\drawing 7(2).dxf">
+      <Filter>Data\dxf\albano</Filter>
+    </None>
+    <None Include="data\dxf\albano\drawing 8(2).dxf">
+      <Filter>Data\dxf\albano</Filter>
+    </None>
+    <None Include="data\dxf\jakobs2\Drawing1.dxf">
+      <Filter>Data\dxf\jakobs2</Filter>
+    </None>
+    <None Include="data\dxf\jakobs2\Drawing2.dxf">
+      <Filter>Data\dxf\jakobs2</Filter>
+    </None>
+    <None Include="data\dxf\jakobs2\Drawing3.dxf">
+      <Filter>Data\dxf\jakobs2</Filter>
+    </None>
+    <None Include="data\dxf\jakobs2\Drawing4.dxf">
+      <Filter>Data\dxf\jakobs2</Filter>
+    </None>
+    <None Include="data\dxf\jakobs2\Drawing5.dxf">
+      <Filter>Data\dxf\jakobs2</Filter>
+    </None>
+    <None Include="data\dxf\jakobs2\Drawing6.dxf">
+      <Filter>Data\dxf\jakobs2</Filter>
+    </None>
+    <None Include="data\dxf\jakobs2\Drawing7.dxf">
+      <Filter>Data\dxf\jakobs2</Filter>
+    </None>
+    <None Include="data\dxf\jakobs2\Drawing8.dxf">
+      <Filter>Data\dxf\jakobs2</Filter>
+    </None>
+    <None Include="data\dxf\jakobs2\Drawing9.dxf">
+      <Filter>Data\dxf\jakobs2</Filter>
+    </None>
+    <None Include="data\dxf\jakobs2\Drawing10.dxf">
+      <Filter>Data\dxf\jakobs2</Filter>
+    </None>
+    <None Include="data\dxf\jakobs2\Drawing11.dxf">
+      <Filter>Data\dxf\jakobs2</Filter>
+    </None>
+    <None Include="data\dxf\jakobs2\Drawing12.dxf">
+      <Filter>Data\dxf\jakobs2</Filter>
+    </None>
+    <None Include="data\dxf\jakobs2\Drawing13.dxf">
+      <Filter>Data\dxf\jakobs2</Filter>
+    </None>
+    <None Include="data\dxf\jakobs2\Drawing14.dxf">
+      <Filter>Data\dxf\jakobs2</Filter>
+    </None>
+    <None Include="data\dxf\jakobs2\Drawing15.dxf">
+      <Filter>Data\dxf\jakobs2</Filter>
+    </None>
+    <None Include="data\dxf\jakobs2\Drawing16.dxf">
+      <Filter>Data\dxf\jakobs2</Filter>
+    </None>
+    <None Include="data\dxf\jakobs2\Drawing17.dxf">
+      <Filter>Data\dxf\jakobs2</Filter>
+    </None>
+    <None Include="data\dxf\jakobs2\Drawing18.dxf">
+      <Filter>Data\dxf\jakobs2</Filter>
+    </None>
+    <None Include="data\dxf\jakobs2\Drawing19.dxf">
+      <Filter>Data\dxf\jakobs2</Filter>
+    </None>
+    <None Include="data\dxf\jakobs2\Drawing20.dxf">
+      <Filter>Data\dxf\jakobs2</Filter>
+    </None>
+    <None Include="data\dxf\jakobs2\Drawing21.dxf">
+      <Filter>Data\dxf\jakobs2</Filter>
+    </None>
+    <None Include="data\dxf\jakobs2\Drawing22.dxf">
+      <Filter>Data\dxf\jakobs2</Filter>
+    </None>
+    <None Include="data\dxf\jakobs2\Drawing23.dxf">
+      <Filter>Data\dxf\jakobs2</Filter>
+    </None>
+    <None Include="data\dxf\jakobs2\Drawing24.dxf">
+      <Filter>Data\dxf\jakobs2</Filter>
+    </None>
+    <None Include="data\dxf\jakobs2\Drawing25.dxf">
+      <Filter>Data\dxf\jakobs2</Filter>
+    </None>
+    <None Include="data\dxf\dighe2\1.dxf">
+      <Filter>Data\dxf\dighe2</Filter>
+    </None>
+    <None Include="data\dxf\dighe2\2.dxf">
+      <Filter>Data\dxf\dighe2</Filter>
+    </None>
+    <None Include="data\dxf\dighe2\3.dxf">
+      <Filter>Data\dxf\dighe2</Filter>
+    </None>
+    <None Include="data\dxf\dighe2\4.dxf">
+      <Filter>Data\dxf\dighe2</Filter>
+    </None>
+    <None Include="data\dxf\dighe2\5.dxf">
+      <Filter>Data\dxf\dighe2</Filter>
+    </None>
+    <None Include="data\dxf\dighe2\6.dxf">
+      <Filter>Data\dxf\dighe2</Filter>
+    </None>
+    <None Include="data\dxf\dighe2\7.dxf">
+      <Filter>Data\dxf\dighe2</Filter>
+    </None>
+    <None Include="data\dxf\dighe2\8.dxf">
+      <Filter>Data\dxf\dighe2</Filter>
+    </None>
+    <None Include="data\dxf\dighe2\9.dxf">
+      <Filter>Data\dxf\dighe2</Filter>
+    </None>
+    <None Include="data\dxf\dighe2\10.dxf">
+      <Filter>Data\dxf\dighe2</Filter>
+    </None>
+    <None Include="data\dxf\dighe1\1.dxf">
+      <Filter>Data\dxf\dighe1</Filter>
+    </None>
+    <None Include="data\dxf\dighe1\2.dxf">
+      <Filter>Data\dxf\dighe1</Filter>
+    </None>
+    <None Include="data\dxf\dighe1\3.dxf">
+      <Filter>Data\dxf\dighe1</Filter>
+    </None>
+    <None Include="data\dxf\dighe1\4.dxf">
+      <Filter>Data\dxf\dighe1</Filter>
+    </None>
+    <None Include="data\dxf\dighe1\5.dxf">
+      <Filter>Data\dxf\dighe1</Filter>
+    </None>
+    <None Include="data\dxf\dighe1\6.dxf">
+      <Filter>Data\dxf\dighe1</Filter>
+    </None>
+    <None Include="data\dxf\dighe1\7.dxf">
+      <Filter>Data\dxf\dighe1</Filter>
+    </None>
+    <None Include="data\dxf\dighe1\8.dxf">
+      <Filter>Data\dxf\dighe1</Filter>
+    </None>
+    <None Include="data\dxf\dighe1\9.dxf">
+      <Filter>Data\dxf\dighe1</Filter>
+    </None>
+    <None Include="data\dxf\dighe1\10.dxf">
+      <Filter>Data\dxf\dighe1</Filter>
+    </None>
+    <None Include="data\dxf\dighe1\11.dxf">
+      <Filter>Data\dxf\dighe1</Filter>
+    </None>
+    <None Include="data\dxf\dighe1\12.dxf">
+      <Filter>Data\dxf\dighe1</Filter>
+    </None>
+    <None Include="data\dxf\dighe1\13.dxf">
+      <Filter>Data\dxf\dighe1</Filter>
+    </None>
+    <None Include="data\dxf\dighe1\14.dxf">
+      <Filter>Data\dxf\dighe1</Filter>
+    </None>
+    <None Include="data\dxf\dighe1\15.dxf">
+      <Filter>Data\dxf\dighe1</Filter>
+    </None>
+    <None Include="data\dxf\dighe1\16.dxf">
+      <Filter>Data\dxf\dighe1</Filter>
+    </None>
+    <None Include="data\svg\dighe1\1.svg">
+      <Filter>Data\svg\dighe1</Filter>
+    </None>
+    <None Include="data\svg\dighe1\2.svg">
+      <Filter>Data\svg\dighe1</Filter>
+    </None>
+    <None Include="data\svg\dighe1\3.svg">
+      <Filter>Data\svg\dighe1</Filter>
+    </None>
+    <None Include="data\svg\dighe1\4.svg">
+      <Filter>Data\svg\dighe1</Filter>
+    </None>
+    <None Include="data\svg\dighe1\5.svg">
+      <Filter>Data\svg\dighe1</Filter>
+    </None>
+    <None Include="data\svg\dighe1\6.svg">
+      <Filter>Data\svg\dighe1</Filter>
+    </None>
+    <None Include="data\svg\dighe1\7.svg">
+      <Filter>Data\svg\dighe1</Filter>
+    </None>
+    <None Include="data\svg\dighe1\8.svg">
+      <Filter>Data\svg\dighe1</Filter>
+    </None>
+    <None Include="data\svg\dighe1\9.svg">
+      <Filter>Data\svg\dighe1</Filter>
+    </None>
+    <None Include="data\svg\dighe1\10.svg">
+      <Filter>Data\svg\dighe1</Filter>
+    </None>
+    <None Include="data\svg\dighe1\11.svg">
+      <Filter>Data\svg\dighe1</Filter>
+    </None>
+    <None Include="data\svg\dighe1\12.svg">
+      <Filter>Data\svg\dighe1</Filter>
+    </None>
+    <None Include="data\svg\dighe1\13.svg">
+      <Filter>Data\svg\dighe1</Filter>
+    </None>
+    <None Include="data\svg\dighe1\14.svg">
+      <Filter>Data\svg\dighe1</Filter>
+    </None>
+    <None Include="data\svg\dighe1\15.svg">
+      <Filter>Data\svg\dighe1</Filter>
+    </None>
+    <None Include="data\svg\dighe1\16.svg">
+      <Filter>Data\svg\dighe1</Filter>
+    </None>
+    <None Include="data\svg\dighe2\1.svg">
+      <Filter>Data\svg\dighe2</Filter>
+    </None>
+    <None Include="data\svg\dighe2\2.svg">
+      <Filter>Data\svg\dighe2</Filter>
+    </None>
+    <None Include="data\svg\dighe2\3.svg">
+      <Filter>Data\svg\dighe2</Filter>
+    </None>
+    <None Include="data\svg\dighe2\4.svg">
+      <Filter>Data\svg\dighe2</Filter>
+    </None>
+    <None Include="data\svg\dighe2\5.svg">
+      <Filter>Data\svg\dighe2</Filter>
+    </None>
+    <None Include="data\svg\dighe2\6.svg">
+      <Filter>Data\svg\dighe2</Filter>
+    </None>
+    <None Include="data\svg\dighe2\7.svg">
+      <Filter>Data\svg\dighe2</Filter>
+    </None>
+    <None Include="data\svg\dighe2\8.svg">
+      <Filter>Data\svg\dighe2</Filter>
+    </None>
+    <None Include="data\svg\dighe2\9.svg">
+      <Filter>Data\svg\dighe2</Filter>
+    </None>
+    <None Include="data\svg\dighe2\10.svg">
+      <Filter>Data\svg\dighe2</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+***************************************************************************************************
+ Copyright (C) 2023 The Qt Company Ltd.
+ SPDX-License-Identifier: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+***************************************************************************************************
+-->
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DD27ECD0-DF83-4004-9154-8EE604C47EEC}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.22000.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.22000.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+    <ProjectName>NestingGUI</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>6.5.3_msvc2019_64</QtInstall>
+    <QtModules>core;gui;widgets;charts</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>6.5.3_msvc2019_64</QtInstall>
+    <QtModules>core;gui;widgets;opengl;openglwidgets;svg;xml;charts</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <OpenMPSupport>true</OpenMPSupport>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>C:\Boost\include\boost-1_84;C:\Program Files %28x86%29\CGAL\include;C:\Users\Long\Downloads\CGAL-5.6.1\auxiliary\gmp\include;C:\Users\Long\Documents\UndergraduateDesign\github\libdxfrw-master\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <TreatAngleIncludeAsExternal>true</TreatAngleIncludeAsExternal>
+      <DisableAnalyzeExternal>true</DisableAnalyzeExternal>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.22000.0\um\x64\OpenGL32.Lib;C:\Users\Long\Downloads\CGAL-5.6.1\auxiliary\gmp\lib\libgmp-10.lib;C:\Users\Long\Downloads\CGAL-5.6.1\auxiliary\gmp\lib\libmpfr-4.lib;C:\Users\Long\source\repos\NestingGUI\lib\libdxfrw.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <HeapReserveSize>100000000</HeapReserveSize>
+      <HeapCommitSize>100000000</HeapCommitSize>
+      <StackReserveSize>100000000</StackReserveSize>
+      <StackCommitSize>100000000</StackCommitSize>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Link>
+      <AdditionalDependencies>C:\Program Files (x86)\Windows Kits\10\Lib\10.0.22000.0\um\x64\OpenGL32.Lib;C:\Users\Long\Downloads\CGAL-5.6.1\auxiliary\gmp\lib\libgmp-10.lib;C:\Users\Long\Downloads\CGAL-5.6.1\auxiliary\gmp\lib\libmpfr-4.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Program Files %28x86%29\CGAL\include;C:\Boost\include\boost-1_84;C:\Users\Long\Downloads\CGAL-5.6.1\auxiliary\gmp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="algorithm.cpp" />
+    <ClCompile Include="candidate_points.cpp" />
+    <ClCompile Include="data_converter.cpp" />
+    <ClCompile Include="dx_iface.cpp" />
+    <ClCompile Include="layout.cpp" />
+    <ClCompile Include="interface.cpp" />
+    <ClCompile Include="layout_widget.cpp" />
+    <ClCompile Include="nesting.cpp" />
+    <ClCompile Include="postprocess.cpp" />
+    <ClCompile Include="preprocess.cpp" />
+    <ClCompile Include="svg_helper.cpp" />
+    <ClCompile Include="table_manager.cpp" />
+    <ClCompile Include="transformed_shape.cpp" />
+    <QtRcc Include="nesting_gui.qrc" />
+    <QtUic Include="create_sheet.ui" />
+    <QtUic Include="nesting_gui.ui" />
+    <QtMoc Include="nesting_gui.h" />
+    <ClCompile Include="nesting_gui.cpp" />
+    <ClCompile Include="main.cpp" />
+    <QtUic Include="wait.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="algorithm.h" />
+    <ClInclude Include="basic.h" />
+    <ClInclude Include="candidate_points.h" />
+    <ClInclude Include="data_converter.h" />
+    <ClInclude Include="dx_data.h" />
+    <ClInclude Include="dx_iface.h" />
+    <ClInclude Include="hasher.h" />
+    <ClInclude Include="layout.h" />
+    <QtMoc Include="layout_widget.h" />
+    <ClInclude Include="interface.h" />
+    <ClInclude Include="lru_size.h" />
+    <ClInclude Include="nesting.h" />
+    <ClInclude Include="part.h" />
+    <ClInclude Include="postprocess.h" />
+    <ClInclude Include="preprocess.h" />
+    <ClInclude Include="rand.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="sheet.h" />
+    <ClInclude Include="simplification.h" />
+    <ClInclude Include="solution.h" />
+    <ClInclude Include="svg_helper.h" />
+    <ClInclude Include="table_polygon_item.h" />
+    <ClInclude Include="transformed_shape.h" />
+    <QtMoc Include="worker.h" />
+    <ClInclude Include="wyhash.h" />
+    <QtMoc Include="table_manager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".editorconfig" />
+    <None Include="data\csv\albano.csv" />
+    <None Include="data\csv\dagli.csv" />
+    <None Include="data\csv\dighe1.csv" />
+    <None Include="data\csv\dighe2.csv" />
+    <None Include="data\csv\fu.csv" />
+    <None Include="data\csv\jakobs1.csv" />
+    <None Include="data\csv\jakobs2.csv" />
+    <None Include="data\csv\jakobs2_clustered.csv" />
+    <None Include="data\csv\mao.csv" />
+    <None Include="data\csv\marques.csv" />
+    <None Include="data\csv\shapes0.csv" />
+    <None Include="data\csv\shapes1.csv" />
+    <None Include="data\csv\shirts.csv" />
+    <None Include="data\csv\swim.csv" />
+    <None Include="data\csv\swim_clustered.csv" />
+    <None Include="data\csv\trousers.csv" />
+    <None Include="data\dxf\albano\drawing 1(2).dxf" />
+    <None Include="data\dxf\albano\drawing 2(2).dxf" />
+    <None Include="data\dxf\albano\drawing 3(4).dxf" />
+    <None Include="data\dxf\albano\drawing 4(4).dxf" />
+    <None Include="data\dxf\albano\drawing 5(4).dxf" />
+    <None Include="data\dxf\albano\drawing 6(4).dxf" />
+    <None Include="data\dxf\albano\drawing 7(2).dxf" />
+    <None Include="data\dxf\albano\drawing 8(2).dxf" />
+    <None Include="data\dxf\dighe1\1.dxf" />
+    <None Include="data\dxf\dighe1\10.dxf" />
+    <None Include="data\dxf\dighe1\11.dxf" />
+    <None Include="data\dxf\dighe1\12.dxf" />
+    <None Include="data\dxf\dighe1\13.dxf" />
+    <None Include="data\dxf\dighe1\14.dxf" />
+    <None Include="data\dxf\dighe1\15.dxf" />
+    <None Include="data\dxf\dighe1\16.dxf" />
+    <None Include="data\dxf\dighe1\2.dxf" />
+    <None Include="data\dxf\dighe1\3.dxf" />
+    <None Include="data\dxf\dighe1\4.dxf" />
+    <None Include="data\dxf\dighe1\5.dxf" />
+    <None Include="data\dxf\dighe1\6.dxf" />
+    <None Include="data\dxf\dighe1\7.dxf" />
+    <None Include="data\dxf\dighe1\8.dxf" />
+    <None Include="data\dxf\dighe1\9.dxf" />
+    <None Include="data\dxf\dighe2\1.dxf" />
+    <None Include="data\dxf\dighe2\10.dxf" />
+    <None Include="data\dxf\dighe2\2.dxf" />
+    <None Include="data\dxf\dighe2\3.dxf" />
+    <None Include="data\dxf\dighe2\4.dxf" />
+    <None Include="data\dxf\dighe2\5.dxf" />
+    <None Include="data\dxf\dighe2\6.dxf" />
+    <None Include="data\dxf\dighe2\7.dxf" />
+    <None Include="data\dxf\dighe2\8.dxf" />
+    <None Include="data\dxf\dighe2\9.dxf" />
+    <None Include="data\dxf\jakobs2\Drawing1.dxf" />
+    <None Include="data\dxf\jakobs2\Drawing10.dxf" />
+    <None Include="data\dxf\jakobs2\Drawing11.dxf" />
+    <None Include="data\dxf\jakobs2\Drawing12.dxf" />
+    <None Include="data\dxf\jakobs2\Drawing13.dxf" />
+    <None Include="data\dxf\jakobs2\Drawing14.dxf" />
+    <None Include="data\dxf\jakobs2\Drawing15.dxf" />
+    <None Include="data\dxf\jakobs2\Drawing16.dxf" />
+    <None Include="data\dxf\jakobs2\Drawing17.dxf" />
+    <None Include="data\dxf\jakobs2\Drawing18.dxf" />
+    <None Include="data\dxf\jakobs2\Drawing19.dxf" />
+    <None Include="data\dxf\jakobs2\Drawing2.dxf" />
+    <None Include="data\dxf\jakobs2\Drawing20.dxf" />
+    <None Include="data\dxf\jakobs2\Drawing21.dxf" />
+    <None Include="data\dxf\jakobs2\Drawing22.dxf" />
+    <None Include="data\dxf\jakobs2\Drawing23.dxf" />
+    <None Include="data\dxf\jakobs2\Drawing24.dxf" />
+    <None Include="data\dxf\jakobs2\Drawing25.dxf" />
+    <None Include="data\dxf\jakobs2\Drawing3.dxf" />
+    <None Include="data\dxf\jakobs2\Drawing4.dxf" />
+    <None Include="data\dxf\jakobs2\Drawing5.dxf" />
+    <None Include="data\dxf\jakobs2\Drawing6.dxf" />
+    <None Include="data\dxf\jakobs2\Drawing7.dxf" />
+    <None Include="data\dxf\jakobs2\Drawing8.dxf" />
+    <None Include="data\dxf\jakobs2\Drawing9.dxf" />
+    <None Include="data\svg\dighe1\1.svg" />
+    <None Include="data\svg\dighe1\10.svg" />
+    <None Include="data\svg\dighe1\11.svg" />
+    <None Include="data\svg\dighe1\12.svg" />
+    <None Include="data\svg\dighe1\13.svg" />
+    <None Include="data\svg\dighe1\14.svg" />
+    <None Include="data\svg\dighe1\15.svg" />
+    <None Include="data\svg\dighe1\16.svg" />
+    <None Include="data\svg\dighe1\2.svg" />
+    <None Include="data\svg\dighe1\3.svg" />
+    <None Include="data\svg\dighe1\4.svg" />
+    <None Include="data\svg\dighe1\5.svg" />
+    <None Include="data\svg\dighe1\6.svg" />
+    <None Include="data\svg\dighe1\7.svg" />
+    <None Include="data\svg\dighe1\8.svg" />
+    <None Include="data\svg\dighe1\9.svg" />
+    <None Include="data\svg\dighe2\1.svg" />
+    <None Include="data\svg\dighe2\10.svg" />
+    <None Include="data\svg\dighe2\2.svg" />
+    <None Include="data\svg\dighe2\3.svg" />
+    <None Include="data\svg\dighe2\4.svg" />
+    <None Include="data\svg\dighe2\5.svg" />
+    <None Include="data\svg\dighe2\6.svg" />
+    <None Include="data\svg\dighe2\7.svg" />
+    <None Include="data\svg\dighe2\8.svg" />
+    <None Include="data\svg\dighe2\9.svg" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

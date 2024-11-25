@@ -9,11 +9,14 @@ Here are two examples:
 ![example1](https://github.com/lryan599/2DNesting/assets/77947703/bc9babaf-d8ee-4fea-a4ad-944ac4ebf495)
 
 ![example2](https://github.com/lryan599/2DNesting/assets/77947703/62cb334d-184d-49cd-b552-52b9766b3761)
+## How to use
+Please open `nesting_gui.sln` using Visual Studio. The files are well organized in VS.
 
-Experiment results on ESICUP datasets:
+## Experiment results on ESICUP datasets:
 
 ![results](https://github.com/lryan599/2DNesting/assets/77947703/3cbc7f79-6b2b-463c-9473-8f5c38939c82)
 
+## Dependencies
 This software can be divided into an engine part and a UI part. The engine is mainly based on CGAL, and the UI is mainly based on Qt. In addition to these two libraries, there are also some other open source libraries applied to this project.
 
 - [CGAL](https://github.com/CGAL/cgal) 5.6.1, You need to ensure that you can use CGAL correctly and download all related dependencies, including boost, libgmp, libmpfr, etc. For details, please refer to the introduction in the CGAL project to ensure that **you can run a demo of CGAL first**.

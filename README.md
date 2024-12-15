@@ -35,9 +35,9 @@ This is my undergraduate graduation project. If you have used or referenced this
 
 If you need a similar graduation project, I would recommend using this project in an improved way, including the following three points:
 
-1. On the basis of building this project, implement a **meta heuristic optimization algorithm**. Such as Guckoo Search, GA or DBO.
+1. **Implement a meta heuristic optimization algorithm based on this project**, such as Guckoo Search, GA or DBO.
 2. **Use multithreading**. On the one hand, multi-threaded parallelism can be used for computing acceleration (such as OpenMP), and on the other hand, multi-threaded approaches can be used to obtain more diverse results, such as using different random seeds for each thread. The latter seems to be more important than the former.
-3. Improve the basic framework of this project. For example, further utilizing CGAL and replacing high-precision numerical types with `double`.
+3. **Improve the basic framework of this project**. For example, further utilizing CGAL and replacing high-precision numerical types with `double`.
 
 ## License
 Due to CGAL using the GPL3.0 license, this project can only use the GPL3.0 license. There will be no further major updates for this project, but you are free to ask any questions.

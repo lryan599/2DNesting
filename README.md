@@ -31,9 +31,9 @@ This software can be divided into an engine part and a UI part. The engine is ma
 - [emhash](https://github.com/ktprime/emhash) 2.1.0. Used for fast hashing, already included in this Git (lru_size.h).
 
 ## Other
-This is my undergraduate graduation project. If you have used or referenced this project, please bear **the risk of plagiarism check** on your own.
+**This project is primarily intended for practice and learning purposes. Use with caution in actual production environments.**
 
-If you need a similar graduation project, I would recommend using this project in an improved way, including the following three points:
+I would recommend improve this project including the following three points:
 
 1. **Implement a meta heuristic optimization algorithm based on this project**, such as Guckoo Search, GA or DBO.
 2. **Use multithreading**. On the one hand, multi-threaded parallelism can be used for computing acceleration (such as OpenMP), and on the other hand, multi-threaded approaches can be used to obtain more diverse results, such as using different random seeds for each thread. The latter seems to be more important than the former.
